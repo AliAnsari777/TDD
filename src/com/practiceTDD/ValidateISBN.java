@@ -1,2 +1,4 @@
-package com.practiceTDD;public class ValidateISBN {
+package com.practiceTDD;
+
+public class ValidateISBN {
 }
