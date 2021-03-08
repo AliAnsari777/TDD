@@ -1,8 +1,8 @@
 package com.practiceTDD;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestValidateISBN {
 
@@ -10,9 +10,9 @@ public class TestValidateISBN {
     public void checkValidISBN(){
         ValidateISBN isbn = new ValidateISBN();
         boolean result = isbn.checkISBN("1328974626");
-        assertTrue("First value", result);
+        assertTrue(result, "First value");
         result = isbn.checkISBN("1250178606");
-        assertTrue("Second value", result);
+        assertTrue(result, "Second value");
     }
 
     @Test
