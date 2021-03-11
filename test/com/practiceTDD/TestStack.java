@@ -23,8 +23,12 @@ public class TestStack {
     }
 
     @Test
+    public void isStackEmpty(){
+        assertNull(stack.peek());
+    }
+
+    @Test
     public void testPeek(){
-        assertEquals(stack.peek(), null);
         stack.push(10);
         stack.push(29);
         assertEquals(stack.peek(), 29);
@@ -32,6 +36,9 @@ public class TestStack {
 
     @Test
     public void testPop(){
-        assertEquals(stack.pop(), null);
+        stack.push(10);
+        stack.push(29);
+        stack.push(35);
+        assertEquals(stack.pop(), 35);
     }
 }
